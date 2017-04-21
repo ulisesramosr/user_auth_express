@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Ingresar Equipo
+        form(method='POST' action='/crearEquipo')
+          div.form-group
+            label(for='idEquipo') ID Equipo Panel Solar
+            input.form-control(type='text' id='idEquipo' placeholder='idEquipo' name='idEquipo')
+          div.form-group
+            label(for='idPlanta') ID Planta
+            input.form-control(type='idPlanta' id='idPlanta' placeholder='Planta Los Cristales' name='idPlanta')
+          div.form-group
+            label(for='propietario') Organización o Propietario
+            input.form-control(type='text' id='propietario' placeholder='propietario' name='propietario')
+          button.btn.btn-primary(type='submit') Guardar

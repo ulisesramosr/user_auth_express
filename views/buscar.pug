@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Ingresar Palabra
+        form(method='POST' action='/buscar')
+          div.form-group
+            label(for='campo1') Ingrese Campo 1:
+            input.form-control(type='text' id='campo1' placeholder='Campo 1' name='campo1')
+          button.btn.btn-primary(type='submit') Buscar     

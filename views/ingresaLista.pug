@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Ingresar campos:
+        form(method='POST' action='/ingresaLista')
+          div.form-group
+            label(for='campo1') Campo 1
+            input.form-control(type='text' id='campo1' placeholder='Campo 1' name='campo1')
+          div.form-group
+            label(for='campo2') Campo 2
+            input.form-control(type='text' id='campo2' placeholder='Campo 2' name='campo2')
+          div.form-group
+            label(for='campo3') Campo 3
+            input.form-control(type='text' id='campo3' placeholder='Campo 3' name='campo3')
+          div.form-group
+            label(for='campo4') Campo 4
+            input.form-control(type='text' id='campo4' placeholder='Campo 4' name='campo4')
+          button.btn.btn-primary(type='submit') Ingresar      

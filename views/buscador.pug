@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Ingresar Equipo
+        form(method='POST' action='/buscador')
+          div.form-group
+            label(for='idEquipo') Ingrese ID Equipo
+            input.form-control(type='text' id='idEquipo' placeholder='idEquipo' name='idEquipo')
+          button.btn.btn-primary(type='submit') Ingresar      
